@@ -26,12 +26,6 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Tempo - v2.1.0
-  * Template URL: https://bootstrapmade.com/tempo-free-onepage-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -50,6 +44,8 @@
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#faq">FAQs</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#pricing">Monthly Plan</a></li>
           <li><a href="#contact">Contact</a></li>
 
         </ul>
@@ -221,7 +217,130 @@
       </div>
     </section><!-- End F.A.Q Section -->
 
- 
+    <!-- ======= Reviews Section ======= -->
+    <section id="reviews" class="team">
+      <div class="container">
+        <div class="section-title">
+          <h2>Reviews</h2>
+          <h3>What Our <span>Customers</span> Think</h3>
+          <!-- <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p> -->
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="review-img">
+                <br>
+                <img src="assets/img/stars.png" style="height:70%; width:70%" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Charlie</h4>
+                <span>Great and professional service. Easy to deal with, goes above and beyond.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+            <div class="review-img">
+              <br>
+              <img src="assets/img/stars.png" style="height:70%; width:70%" class="img-fluid" alt="">
+            </div>
+              <div class="member-info">
+                <h4>Alice</h4>
+                <span>Amazing service, have now used multiple times and will continue to use. Has excellent knowledge and would highly recommend. Also very trustworthy. Thanks so much!</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="review-img">
+                <br>
+                <img src="assets/img/stars.png" style="height:70%; width:70%" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Bella</h4>
+                <span>Thank you so much for the efficient service! Amazing value for money & honestly such a life saver</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="review-img">
+                <br>
+                <img src="assets/img/stars.png" style="height:70%; width:70%" class="img-fluid" alt="">
+              </div>
+              <div class="member-info">
+                <h4>Cameron</h4>
+                <span>I was in a real sticky situation and unable to do any work on my pc but rowlands computing came to my aid and hastily solved my problem at an affordable price.</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Reviews Section -->
+
+        <!-- ======= Pricing Section ======= -->
+        <section id="pricing" class="pricing">
+          <div class="container">
+    
+            <div class="section-title">
+              <h2>Pricing</h2>
+              <h3>We can also help you out <span>Monthly</span></h3>
+              <p>We usually charge per hour for work we do. However we also have a monthly plan to assist you with technical problems as well as tuition!</p>
+            </div>
+    
+            <div class="row">
+
+              <div class="col-lg-4 col-md-6 mt-4 mt-lg-0 col-centered">
+                <div class="box">
+                  <h3>Our Monthly Support Plan</h3>
+                  <h4><sup>£</sup>40<span> / month *</span></h4>
+                  <ul>
+                    <li>Includes 4 Hours of Time Per Month</li>
+                    <li>2 Hours in Person ** + 2 Hours of Virtual Assistance</li>
+                    <li>Can Include Tuition in Person or over Zoom / WebEx / Skype</li>
+                    <li>Time Valued at £80</li>
+                    <li><em>* 3 Month Minimum Commit Required</em></li>
+                    <li><em>** In Person Support Limited to Rowlands Castle & Surrounding Areas</em></li>
+                  </ul>
+
+                  <div class="btn-wrap">
+                    <div id="paypal-button-container"></div>
+                    <script src="https://www.paypal.com/sdk/js?client-id=Aeza1I_4dtRUqZVoLCUjUhRSHf_i4mMC3n_nMVcWPc8tRfYUlWDuiC64rirU6ffbJsjaL_GxoFAt4vz4&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+                    <script>
+                      paypal.Buttons({
+                          style: {
+                              shape: 'pill',
+                              color: 'blue',
+                              layout: 'vertical',
+                              label: 'subscribe'
+                          },
+                          createSubscription: function(data, actions) {
+                            return actions.subscription.create({
+                              'plan_id': 'P-0N246342CM200284ML6NKEUI'
+                            });
+                          },
+                          onApprove: function(data, actions) {
+                            alert(data.subscriptionID);
+                          }
+                      }).render('#paypal-button-container');
+                    </script>
+
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+        </section>
+     <!-- End Pricing Section -->
+    
+
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
@@ -263,7 +382,7 @@
               <div class="email">
                 <i class="icofont-location-pin"></i>
                 <h4>Location:</h4>
-                <p>Rowlands Castle, Hampshire & The Surrounding Area</p>
+                <p>We Cover Rowlands Castle, in Hampshire and the Surrounding Area</p>
             </div>
 
             </div>
